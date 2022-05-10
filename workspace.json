@@ -1,4 +1,9 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "supervisee": "apps/supervisee",
+    "supervisee-e2e": "packages/supervisee-e2e",
+    "supervisor": "apps/supervisor",
+    "supervisor-e2e": "packages/supervisor-e2e"
+  }
 }
