@@ -1,9 +1,12 @@
 {
   "version": 2,
   "projects": {
+    "common-ui": "packages/common-ui",
     "supervisee": "apps/supervisee",
     "supervisee-e2e": "packages/supervisee-e2e",
+    "supervisee-ui": "packages/supervisee-ui",
     "supervisor": "apps/supervisor",
-    "supervisor-e2e": "packages/supervisor-e2e"
+    "supervisor-e2e": "packages/supervisor-e2e",
+    "supervisor-ui": "packages/supervisor-ui"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "sourceRoot": "packages/common-ui/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/common-ui/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/common-ui"],
+      "options": {
+        "jestConfig": "packages/common-ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
