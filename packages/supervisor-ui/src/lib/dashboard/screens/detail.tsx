@@ -1,16 +1,17 @@
-import React, { useRef } from 'react';
-import { SafeAreaView, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { MyButton, MyText } from '@shareapp1/common-ui';
+import React, { useRef } from 'react';
+import { SafeAreaView, StyleSheet, ScrollView, StatusBar } from 'react-native';
 
 import { Text } from 'react-native';
 
 /* eslint-disable-next-line */
-export interface DashboardProps {}
+export interface DetailProps {}
 
-export function Dashboard(props: DashboardProps) {
+export function Detail(props: DetailProps) {
   const scrollViewRef = useRef<null | ScrollView>(null);
   const { navigate } = useNavigation();
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -22,8 +23,8 @@ export function Dashboard(props: DashboardProps) {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}
         >
-          <Text>Welcome to dashboard!</Text>
-          <MyButton onPress={() => navigate('Detail')} />
+          <Text>This is detail page</Text>
+          <MyButton onPress={() => navigate('Dashboard')} />
           <MyText />
         </ScrollView>
       </SafeAreaView>
@@ -31,7 +32,7 @@ export function Dashboard(props: DashboardProps) {
   );
 }
 
-export default Dashboard;
+export default Detail;
 
 const styles = StyleSheet.create({
   scrollView: {
