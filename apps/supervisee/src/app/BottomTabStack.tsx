@@ -12,12 +12,6 @@ type RootStackParamList = {
   Supervisee: undefined;
 };
 
-const getHeaderTitle = (route): string => {
-  const routeName = getFocusedRouteNameFromRoute(route);
-
-  return routeName ?? '';
-};
-
 const Tab = createBottomTabNavigator<RootStackParamList>();
 
 const tabs = [
@@ -29,9 +23,6 @@ const tabs = [
 ];
 
 const BottomTabStack = ({ navigation, route }): ReactElement => {
-  React.useLayoutEffect(() => {
-    navigation.setOptions({ headerTitle: getHeaderTitle(route) });
-  }, [navigation, route]);
   return (
     <Tab.Navigator initialRouteName={DashboardTabSettings.name}>
       {tabs.map((tab) => (

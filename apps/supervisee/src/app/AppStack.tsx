@@ -6,18 +6,18 @@ import LearnTabAppStack from 'packages/supervisee-ui/tabs/learn/app-stack';
 import JobsTabAppStack from 'packages/supervisee-ui/tabs/jobs/app-stack';
 import NearMeTabAppStack from 'packages/supervisee-ui/tabs/near-me/app-stack';
 import AuthAppStack from 'packages/auth-ui/src/app-stack';
-
 import BottomTabStack from './BottomTabStack';
 
 const Stack = createStackNavigator<{ SuperVisorDashboardHome: undefined }>();
+const includeAuth = false;
 const tabScreens = [
-  AuthAppStack,
   DashboardTabAppStack,
   CaseNotesTabAppStack,
   LearnTabAppStack,
   JobsTabAppStack,
   NearMeTabAppStack,
 ];
+const tabs = includeAuth ? [AuthAppStack, ...tabScreens] : tabScreens;
 const AppStack = () => {
   return (
     <Stack.Navigator
@@ -31,7 +31,7 @@ const AppStack = () => {
           headerLeft: () => null,
         }}
       />
-      {tabScreens.map((tab) =>
+      {tabs.map((tab) =>
         tab.map((screen) => (
           <Stack.Screen
             name={screen.name}
