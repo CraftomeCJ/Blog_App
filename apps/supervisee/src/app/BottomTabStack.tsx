@@ -2,10 +2,10 @@ import React, { ReactElement } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import DashboardTabSettings from 'packages/supervisor-ui/tabs/dashboard/tab-settings';
-import SuperviseeTabSettings from 'packages/supervisor-ui/tabs/supervisee/tab-settings';
-import TasksTabSettings from 'packages/supervisor-ui/tabs/tasks/tab-settings';
-import ResourcesTabSettings from 'packages/supervisor-ui/tabs/resources/tab-settings';
-import MoreTabSettings from 'packages/supervisor-ui/tabs/more/tab-settings';
+import CaseNotesTabSettings from 'packages/supervisee-ui/tabs/case-notes/tab-settings';
+import LearnTabSettings from 'packages/supervisee-ui/tabs/learn/tab-settings';
+import JobsTabSettings from 'packages/supervisee-ui/tabs/jobs/tab-settings';
+import NearMeTabSettings from 'packages/supervisee-ui/tabs/near-me/tab-settings';
 
 type RootStackParamList = {
   Home: undefined;
@@ -22,10 +22,10 @@ const Tab = createBottomTabNavigator<RootStackParamList>();
 
 const tabs = [
   DashboardTabSettings,
-  SuperviseeTabSettings,
-  TasksTabSettings,
-  ResourcesTabSettings,
-  MoreTabSettings,
+  CaseNotesTabSettings,
+  LearnTabSettings,
+  JobsTabSettings,
+  NearMeTabSettings,
 ];
 
 const BottomTabStack = ({ navigation, route }): ReactElement => {

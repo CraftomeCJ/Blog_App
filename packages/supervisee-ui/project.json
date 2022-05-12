@@ -1,5 +1,5 @@
 {
-  "sourceRoot": "packages/supervisee-ui/src",
+  "sourceRoot": "packages/supervisee-ui/tabs",
   "projectType": "library",
   "tags": [],
   "targets": {

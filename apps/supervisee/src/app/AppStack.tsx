@@ -1,20 +1,20 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import DashboardTabAppStack from 'packages/supervisor-ui/tabs/dashboard/app-stack';
-import SuperviseeTabAppStack from 'packages/supervisor-ui/tabs/supervisee/app-stack';
-import TasksTabAppStack from 'packages/supervisor-ui/tabs/tasks/app-stack';
-import ResourcesTabAppStack from 'packages/supervisor-ui/tabs/resources/app-stack';
-import MoreTabAppStack from 'packages/supervisor-ui/tabs/more/app-stack';
+import DashboardTabAppStack from 'packages/supervisee-ui/tabs/dashboard/app-stack';
+import CaseNotesTabAppStack from 'packages/supervisee-ui/tabs/case-notes/app-stack';
+import LearnTabAppStack from 'packages/supervisee-ui/tabs/learn/app-stack';
+import JobsTabAppStack from 'packages/supervisee-ui/tabs/jobs/app-stack';
+import NearMeTabAppStack from 'packages/supervisee-ui/tabs/near-me/app-stack';
 
 import BottomTabStack from './BottomTabStack';
 
 const Stack = createStackNavigator<{ SuperVisorDashboardHome: undefined }>();
 const tabScreens = [
   DashboardTabAppStack,
-  SuperviseeTabAppStack,
-  TasksTabAppStack,
-  ResourcesTabAppStack,
-  MoreTabAppStack,
+  CaseNotesTabAppStack,
+  LearnTabAppStack,
+  JobsTabAppStack,
+  NearMeTabAppStack,
 ];
 const AppStack = () => {
   return (

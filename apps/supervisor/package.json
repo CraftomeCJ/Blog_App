@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@react-native-async-storage/async-storage": "*",
-    "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/native": "*",
     "@react-navigation/stack": "*",
     "@testing-library/jest-native": "*",
@@ -12,10 +11,12 @@
     "react": "*",
     "react-native": "*",
     "react-native-config": "*",
+    "@react-native-community/masked-view": "^0.1.11",
     "react-native-gesture-handler": "^2.4.2",
     "react-native-reanimated": "^2.8.0",
     "react-native-safe-area-context": "^4.2.5",
     "react-native-screens": "^3.13.1",
-    "react-native-svg": "*"
+    "react-native-svg": "*",
+    "@react-navigation/bottom-tabs": "*"
   }
 }

@@ -4,3 +4,7 @@ export * from './supervisee/app-stack';
 export * from './supervisee/tab-settings';
 export * from './tasks/app-stack';
 export * from './tasks/tab-settings';
+export * from './resources/app-stack';
+export * from './resources/tab-settings';
+export * from './more/app-stack';
+export * from './more/tab-settings';

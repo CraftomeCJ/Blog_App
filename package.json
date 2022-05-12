@@ -2,7 +2,10 @@
   "name": "shareapp",
   "version": "0.0.1",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:supervisor": "nx run-ios supervisor",
+    "start:supervisee": "nx run-ios supervisee"
+  },
   "private": true,
   "devDependencies": {
     "@nrwl/cli": "14.1.4",
