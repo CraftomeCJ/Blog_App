@@ -17,7 +17,8 @@
     "paths": {
       "@shareapp1/common-ui": ["packages/common-ui/src/index.ts"],
       "@shareapp1/supervisee-ui": ["packages/supervisee-ui/tabs/index.ts"],
-      "@shareapp1/supervisor-ui": ["packages/supervisor-ui/tabs/index.ts"]
+      "@shareapp1/supervisor-ui": ["packages/supervisor-ui/tabs/index.ts"],
+      "@shareapp1/auth-ui": ["packages/auth-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
