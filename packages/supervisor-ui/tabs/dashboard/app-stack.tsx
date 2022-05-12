@@ -3,7 +3,7 @@ import DetailScreen from './screens/detail';
 
 const AppStack = [
   {
-    name: 'Dashboard',
+    name: 'SuperVisorDashboardHome',
     component: DashboardScreen,
     options: {
       title: 'Supervisor Dashboard',
