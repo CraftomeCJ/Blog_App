@@ -32,7 +32,9 @@ const BottomTabStack = ({
   renderTabs?: SupervisorTabTypes[];
 }): ReactElement => {
   const filteredTabs = renderTabs
-    ? tabs.filter((item) => renderTabs.includes(item.type))
+    ? tabs.filter((item) =>
+        renderTabs.includes(item.type as SupervisorTabTypes)
+      )
     : tabs;
   return (
     <Tab.Navigator initialRouteName={DashboardTabSettings.name}>
