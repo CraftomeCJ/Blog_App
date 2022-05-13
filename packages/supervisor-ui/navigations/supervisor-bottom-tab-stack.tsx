@@ -5,6 +5,7 @@ import SuperviseeTabSettings from 'packages/supervisor-ui/tabs/supervisee/tab-se
 import TasksTabSettings from 'packages/supervisor-ui/tabs/tasks/tab-settings';
 import ResourcesTabSettings from 'packages/supervisor-ui/tabs/resources/tab-settings';
 import MoreTabSettings from 'packages/supervisor-ui/tabs/more/tab-settings';
+import { SupervisorTabTypes } from 'packages/common-utils/types/navigation';
 
 type RootStackParamList = {
   Home: undefined;
@@ -21,10 +22,21 @@ const tabs = [
   MoreTabSettings,
 ];
 
-const BottomTabStack = ({ navigation, route }): ReactElement => {
+const BottomTabStack = ({
+  navigation,
+  route,
+  renderTabs,
+}: {
+  navigation: any;
+  route: any;
+  renderTabs?: SupervisorTabTypes[];
+}): ReactElement => {
+  const filteredTabs = renderTabs
+    ? tabs.filter((item) => renderTabs.includes(item.type))
+    : tabs;
   return (
     <Tab.Navigator initialRouteName={DashboardTabSettings.name}>
-      {tabs.map((tab) => (
+      {filteredTabs.map((tab) => (
         <Tab.Screen
           name={tab.name}
           component={tab.component}

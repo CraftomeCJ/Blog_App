@@ -6,7 +6,8 @@ import LearnTabAppStack from 'packages/supervisee-ui/tabs/learn/app-stack';
 import JobsTabAppStack from 'packages/supervisee-ui/tabs/jobs/app-stack';
 import NearMeTabAppStack from 'packages/supervisee-ui/tabs/near-me/app-stack';
 import AuthAppStack from 'packages/auth-ui/src/app-stack';
-import BottomTabStack from './BottomTabStack';
+import BottomTabStack from './supervisee-bottom-tab-stack';
+import { SuperviseeAppStackProps } from 'packages/common-utils/types/navigation';
 
 const Stack = createStackNavigator<{ SuperVisorDashboardHome: undefined }>();
 const includeAuth = false;
@@ -17,8 +18,7 @@ const tabScreens = [
   JobsTabAppStack,
   NearMeTabAppStack,
 ];
-const tabs = includeAuth ? [AuthAppStack, ...tabScreens] : tabScreens;
-const AppStack = () => {
+const AppStack = ({ renderTabs }: SuperviseeAppStackProps) => {
   return (
     <Stack.Navigator
       initialRouteName={AuthAppStack[0].name}
@@ -26,12 +26,13 @@ const AppStack = () => {
     >
       <Stack.Screen
         name={'SuperviseeTabs'}
-        component={BottomTabStack}
         options={{
           headerLeft: () => null,
         }}
-      />
-      {tabs.map((tab) =>
+      >
+        {(props) => <BottomTabStack {...props} renderTabs={renderTabs} />}
+      </Stack.Screen>
+      {tabScreens.map((tab) =>
         tab.map((screen) => (
           <Stack.Screen
             name={screen.name}

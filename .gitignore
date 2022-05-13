@@ -99,8 +99,6 @@ buck-out/
 /vendor/bundle/
 /
 
-packages/supervisee-e2e/artifacts
-
 # React Native
 
 # Xcode

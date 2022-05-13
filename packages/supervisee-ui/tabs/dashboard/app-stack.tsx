@@ -1,19 +1,21 @@
+import { navigation } from './constants/navigation';
 import DashboardScreen from './screens/dashboard';
 import DetailScreen from './screens/detail';
 
+const dashboardConstants = navigation.dashboard;
 const AppStack = [
   {
-    name: 'SuperViseeDashboardHome',
+    name: dashboardConstants.stack.name,
     component: DashboardScreen,
     options: {
-      title: 'Supervisee Dashboard',
+      title: dashboardConstants.stack.title,
     },
   },
   {
-    name: 'SuperViseeDetail',
+    name: dashboardConstants.detailScreen.stack.name,
     component: DetailScreen,
     options: {
-      title: 'Supervisee Detail',
+      title: dashboardConstants.detailScreen.stack.title,
     },
   },
 ];

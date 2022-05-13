@@ -1,19 +1,20 @@
+import { navigation } from 'packages/supervisor-ui/tabs/dashboard/constants/navigation';
 import DashboardScreen from './screens/dashboard';
 import DetailScreen from './screens/detail';
 
 const AppStack = [
   {
-    name: 'SuperVisorDashboardHome',
+    name: navigation.dashboard.stack.name,
     component: DashboardScreen,
     options: {
-      title: 'Supervisor Dashboard',
+      title: navigation.dashboard.stack.title,
     },
   },
   {
-    name: 'Detail',
+    name: navigation.detailScreen.stack.name,
     component: DetailScreen,
     options: {
-      title: 'Supervisor Detail',
+      title: navigation.detailScreen.stack.title,
     },
   },
 ];

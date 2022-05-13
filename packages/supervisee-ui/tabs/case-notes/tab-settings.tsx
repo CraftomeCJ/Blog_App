@@ -1,11 +1,14 @@
+import { NavigationTabSettings, SuperviseeTabTypes } from 'packages/common-utils/types/navigation';
+import { navigation } from './constants/navigation';
 import HomeScreen from './screens/home';
 
-const TabSettings = {
-  name: 'CaseNotesTab',
+const TabSettings: NavigationTabSettings = {
+  name: navigation.caseNotes.tab.name,
   component: HomeScreen,
   options: {
-    title: 'Case Notes',
+    title: navigation.caseNotes.tab.title,
   },
+  type: SuperviseeTabTypes.CaseNotes,
 };
 
 export default TabSettings;

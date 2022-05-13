@@ -1,11 +1,13 @@
+import { navigation } from './constants/navigation';
 import HomeScreen from './screens/home';
 
+const caseNotesConstants = navigation.caseNotes;
 const AppStack = [
   {
-    name: 'SuperVisorCaseNotesHome',
+    name: caseNotesConstants.stack.name,
     component: HomeScreen,
     options: {
-      title: 'Case Notes',
+      title: caseNotesConstants.stack.title,
     },
   },
 ];

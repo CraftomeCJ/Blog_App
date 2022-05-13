@@ -1,14 +1,10 @@
 import React, { useRef } from 'react';
 import { SafeAreaView, StyleSheet, ScrollView, StatusBar } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 import { MyText } from '@shareapp1/common-ui';
 
 import { Text } from 'react-native';
 
-/* eslint-disable-next-line */
-export interface DashboardProps {}
-
-export function Home(props: DashboardProps) {
+const Home: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);
   return (
     <>
@@ -27,7 +23,7 @@ export function Home(props: DashboardProps) {
       </SafeAreaView>
     </>
   );
-}
+};
 
 export default Home;
 
