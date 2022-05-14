@@ -1,6 +1,6 @@
 import HomeScreen from './screens/home';
 
-const AppStack = [
+const appStack = [
   {
     name: 'SuperVisorSuperViseeHome',
     component: HomeScreen,
@@ -10,4 +10,4 @@ const AppStack = [
   },
 ];
 
-export default AppStack;
+export default appStack;

@@ -1,17 +1,17 @@
 export enum SuperviseeTabTypes {
-  Home,
-  CaseNotes,
-  Learn,
-  Jobs,
-  NearMe,
+  Home = 'Home',
+  CaseNotes = 'CaseNotes',
+  Learn = 'Learn',
+  Jobs = 'Jobs',
+  NearMe = 'NearMe',
 }
 
 export enum SupervisorTabTypes {
-  Home,
-  More,
-  Resources,
-  Supervisee,
-  Tasks,
+  Home = 'Home',
+  Resources = 'Resources',
+  Supervisee = 'Supervisee',
+  Tasks = 'Tasks',
+  More = 'More',
 }
 
 export interface NavigationTabSettings {

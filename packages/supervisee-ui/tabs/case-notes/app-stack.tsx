@@ -2,7 +2,7 @@ import { navigation } from './constants/navigation';
 import HomeScreen from './screens/home';
 
 const caseNotesConstants = navigation.caseNotes;
-const AppStack = [
+const appStack = [
   {
     name: caseNotesConstants.stack.name,
     component: HomeScreen,
@@ -12,4 +12,4 @@ const AppStack = [
   },
 ];
 
-export default AppStack;
+export default appStack;

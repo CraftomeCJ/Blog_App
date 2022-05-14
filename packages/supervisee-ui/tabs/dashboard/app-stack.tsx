@@ -3,7 +3,7 @@ import DashboardScreen from './screens/dashboard';
 import DetailScreen from './screens/detail';
 
 const dashboardConstants = navigation.dashboard;
-const AppStack = [
+const appStack = [
   {
     name: dashboardConstants.stack.name,
     component: DashboardScreen,
@@ -20,4 +20,4 @@ const AppStack = [
   },
 ];
 
-export default AppStack;
+export default appStack;

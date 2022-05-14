@@ -5,7 +5,7 @@ import CaseNotesTabSettings from 'packages/supervisee-ui/tabs/case-notes/tab-set
 import LearnTabSettings from 'packages/supervisee-ui/tabs/learn/tab-settings';
 import JobsTabSettings from 'packages/supervisee-ui/tabs/jobs/tab-settings';
 import NearMeTabSettings from 'packages/supervisee-ui/tabs/near-me/tab-settings';
-import { SuperviseeTabTypes } from 'packages/common-utils/constants/navigation';
+import { SuperviseeTabTypes } from 'packages/common-utils/types/navigation';
 
 type RootStackParamList = {
   Home: undefined;
@@ -32,7 +32,10 @@ const BottomTabStack = ({
   renderTabs?: SuperviseeTabTypes[];
 }): ReactElement => {
   const filteredTabs = renderTabs
-    ? tabs.filter((item) => renderTabs.includes(item.type))
+    ? tabs.filter((item) => {
+        console.log(renderTabs, ':', item.type);
+        return renderTabs.includes(item.type);
+      })
     : tabs;
   return (
     <Tab.Navigator initialRouteName={DashboardTabSettings.name}>

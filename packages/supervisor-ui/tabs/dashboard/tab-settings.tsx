@@ -12,7 +12,7 @@ const TabSettings: NavigationTabSettings = {
   options: {
     title: navigation.dashboard.tab.title,
   },
-  type: SupervisorTabTypes.More,
+  type: SupervisorTabTypes.Home,
 };
 
 export default TabSettings;

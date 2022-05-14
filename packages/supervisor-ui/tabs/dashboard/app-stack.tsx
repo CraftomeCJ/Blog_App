@@ -2,7 +2,7 @@ import { navigation } from 'packages/supervisor-ui/tabs/dashboard/constants/navi
 import DashboardScreen from './screens/dashboard';
 import DetailScreen from './screens/detail';
 
-const AppStack = [
+const appStack = [
   {
     name: navigation.dashboard.stack.name,
     component: DashboardScreen,
@@ -19,4 +19,4 @@ const AppStack = [
   },
 ];
 
-export default AppStack;
+export default appStack;
