@@ -1,39 +1,38 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { authScreens } from '@shareapp1/auth-ui';
 import DashboardTabAppStack from '../tabs/dashboard/app-stack';
-import SuperviseeTabAppStack from '../tabs/supervisee/app-stack';
-import TasksTabAppStack from '../tabs/tasks/app-stack';
-import ResourcesTabAppStack from '../tabs/resources/app-stack';
-import MoreTabAppStack from '../tabs/more/app-stack';
-import BottomTabStack from './supervisor-bottom-tab-stack';
-import { SupervisorAppStackProps } from '@shareapp1/common-utils';
+import CaseNotesTabAppStack from '../tabs/case-notes/app-stack';
+import LearnTabAppStack from '../tabs/learn/app-stack';
+import JobsTabAppStack from '../tabs/jobs/app-stack';
+import NearMeTabAppStack from '../tabs/near-me/app-stack';
+import { authScreens } from '@shareapp1/auth-ui';
+import BottomTabStack from './bottom-tab-stack';
+import { SuperviseeAppStackProps } from '@shareapp1/common-utils';
 
 const Stack = createStackNavigator<{ SuperVisorDashboardHome: undefined }>();
-const includeAuth = true;
+const includeAuth = false;
 const tabScreens = [
   DashboardTabAppStack,
-  SuperviseeTabAppStack,
-  TasksTabAppStack,
-  ResourcesTabAppStack,
-  MoreTabAppStack,
+  CaseNotesTabAppStack,
+  LearnTabAppStack,
+  JobsTabAppStack,
+  NearMeTabAppStack,
 ];
-const tabs = includeAuth ? [authScreens, ...tabScreens] : tabScreens;
-export const AppStack = ({ renderTabs }: SupervisorAppStackProps) => {
+export const AppStack = ({ renderTabs }: SuperviseeAppStackProps) => {
   return (
     <Stack.Navigator
-      initialRouteName={'Dashboard'}
+      initialRouteName={authScreens[0].name}
       screenOptions={{ gestureEnabled: false }}
     >
       <Stack.Screen
-        name={'SupervisorTbs'}
+        name={'SuperviseeTabs'}
         options={{
           headerLeft: () => null,
         }}
       >
         {(props) => <BottomTabStack {...props} renderTabs={renderTabs} />}
       </Stack.Screen>
-      {tabs.map((tab) =>
+      {tabScreens.map((tab) =>
         tab.map((screen) => (
           <Stack.Screen
             name={screen.name}

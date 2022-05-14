@@ -1,2 +1,2 @@
-export * from './navigations/supervisee-app-stack';
-export * from './navigations/supervisee-bottom-tab-stack';
+export * from './navigations/app-stack';
+export * from './navigations/bottom-tab-stack';
