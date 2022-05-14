@@ -5,7 +5,7 @@ import CaseNotesTabSettings from 'packages/supervisee-ui/tabs/case-notes/tab-set
 import LearnTabSettings from 'packages/supervisee-ui/tabs/learn/tab-settings';
 import JobsTabSettings from 'packages/supervisee-ui/tabs/jobs/tab-settings';
 import NearMeTabSettings from 'packages/supervisee-ui/tabs/near-me/tab-settings';
-import { SuperviseeTabTypes } from 'packages/common-utils/types/navigation';
+import { SuperviseeTabTypes } from 'packages/common-utils/src/types/navigation';
 
 type RootStackParamList = {
   Home: undefined;

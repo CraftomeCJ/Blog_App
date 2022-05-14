@@ -6,12 +6,10 @@ export interface MyTextProps {
   text?: string;
 }
 
-const MyText = (props: MyTextProps) => {
+export const MyText = (props: MyTextProps) => {
   return (
     <View>
       <Text>{props.text ?? 'My Text'}</Text>
     </View>
   );
 };
-
-export default MyText;

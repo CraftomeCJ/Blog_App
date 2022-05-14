@@ -1,7 +1,12 @@
-import MyText from 'packages/common-ui/src/components/mytext/mytext';
 import React, { useRef } from 'react';
-import { SafeAreaView, StyleSheet, ScrollView, StatusBar } from 'react-native';
-import { Text } from 'react-native';
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  StatusBar,
+  Text,
+} from 'react-native';
+import { MyText } from '@shareapp1/common-ui';
 
 const Home: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);

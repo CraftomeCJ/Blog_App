@@ -7,7 +7,7 @@ import TasksTabAppStack from 'packages/supervisor-ui/tabs/tasks/app-stack';
 import ResourcesTabAppStack from 'packages/supervisor-ui/tabs/resources/app-stack';
 import MoreTabAppStack from 'packages/supervisor-ui/tabs/more/app-stack';
 import BottomTabStack from './supervisor-bottom-tab-stack';
-import { SupervisorAppStackProps } from 'packages/common-utils/types/navigation';
+import { SupervisorAppStackProps } from '@shareapp1/common-utils';
 
 const Stack = createStackNavigator<{ SuperVisorDashboardHome: undefined }>();
 const includeAuth = true;

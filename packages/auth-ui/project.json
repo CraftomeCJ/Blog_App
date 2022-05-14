@@ -1,5 +1,5 @@
 {
-  "sourceRoot": "packages/supervisee-ui/tabs",
+  "sourceRoot": "packages/auth-ui/tabs",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -7,14 +7,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/supervisee-ui/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["packages/auth-ui/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/supervisee-ui"],
+      "outputs": ["coverage/packages/auth-ui"],
       "options": {
-        "jestConfig": "packages/supervisee-ui/jest.config.ts",
+        "jestConfig": "packages/auth-ui/jest.config.ts",
         "passWithNoTests": true
       }
     }

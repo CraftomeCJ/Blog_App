@@ -3,9 +3,9 @@
   "projects": {
     "common-ui": "packages/common-ui",
     "common-utils": "packages/common-utils",
-    "supervisee": "apps/supervisee",
     "supervisee-ui": "packages/supervisee-ui",
-    "supervisor": "apps/supervisor",
-    "supervisor-ui": "packages/supervisor-ui"
+    "supervisor-ui": "packages/supervisor-ui",
+    "supervisee": "apps/supervisee",
+    "supervisor": "apps/supervisor"
   }
 }

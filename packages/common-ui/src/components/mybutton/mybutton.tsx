@@ -7,12 +7,10 @@ export interface MyButtonProps {
   onPress?: () => void;
 }
 
-const MyButton = (props: MyButtonProps) => {
+export const MyButton = (props: MyButtonProps) => {
   return (
     <View>
       <Button title={'My Button'} onPress={props?.onPress} />
     </View>
   );
 };
-
-export default MyButton;

@@ -6,7 +6,9 @@
     "start:supervisor": "nx run-ios supervisor",
     "start:supervisee": "nx run-ios supervisee",
     "test:supervisor": "npx nx test supervisor-ui --codeCoverage --no-cache",
-    "test:supervisee": "npx nx test supervisee-ui --codeCoverage --no-cache"
+    "test:supervisee": "npx nx test supervisee-ui --codeCoverage --no-cache",
+    "lint:supervisor:fix": "npx nx lint supervisor-ui --fix",
+    "lint:supervisee:fix": "npx nx lint supervisee-ui --fix"
   },
   "private": true,
   "devDependencies": {

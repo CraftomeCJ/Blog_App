@@ -3,7 +3,7 @@ import { navigation } from './constants/navigation';
 import {
   NavigationTabSettings,
   SuperviseeTabTypes,
-} from 'packages/common-utils/types/navigation';
+} from '@shareapp1/common-utils';
 
 const TabSettings: NavigationTabSettings = {
   name: navigation.dashboard.tab.name,

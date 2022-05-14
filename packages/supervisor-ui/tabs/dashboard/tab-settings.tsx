@@ -2,7 +2,7 @@ import { navigation } from 'packages/supervisor-ui/tabs/dashboard/constants/navi
 import {
   NavigationTabSettings,
   SupervisorTabTypes,
-} from 'packages/common-utils/types/navigation';
+} from '@shareapp1/common-utils';
 
 import DashboardScreen from './screens/dashboard';
 

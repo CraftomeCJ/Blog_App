@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import AppStack from 'packages/supervisee-ui/navigations/supervisee-app-stack';
-import { SuperviseeTabTypes } from 'packages/common-utils/types/navigation';
+import { AppStack } from '@shareapp1/supervisee-ui';
+import { SuperviseeTabTypes } from '@shareapp1/common-utils';
 
 //can select the tabs you want to display
 const renderTabs = [

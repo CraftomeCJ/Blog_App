@@ -7,7 +7,7 @@ import JobsTabAppStack from 'packages/supervisee-ui/tabs/jobs/app-stack';
 import NearMeTabAppStack from 'packages/supervisee-ui/tabs/near-me/app-stack';
 import AuthAppStack from 'packages/auth-ui/src/app-stack';
 import BottomTabStack from './supervisee-bottom-tab-stack';
-import { SuperviseeAppStackProps } from 'packages/common-utils/types/navigation';
+import { SuperviseeAppStackProps } from '@shareapp1/common-utils';
 
 const Stack = createStackNavigator<{ SuperVisorDashboardHome: undefined }>();
 const includeAuth = false;

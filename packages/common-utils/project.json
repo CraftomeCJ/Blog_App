@@ -1,5 +1,5 @@
 {
-  "sourceRoot": "packages/supervisee-ui/tabs",
+  "sourceRoot": "packages/common-utils/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -7,14 +7,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/supervisee-ui/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["packages/common-utils/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/supervisee-ui"],
+      "outputs": ["coverage/packages/common-utils"],
       "options": {
-        "jestConfig": "packages/supervisee-ui/jest.config.ts",
+        "jestConfig": "packages/common-utils/jest.config.ts",
         "passWithNoTests": true
       }
     }

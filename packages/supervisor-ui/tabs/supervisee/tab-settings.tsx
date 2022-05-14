@@ -1,4 +1,7 @@
-import { NavigationTabSettings, SupervisorTabTypes } from 'packages/common-utils/types/navigation';
+import {
+  NavigationTabSettings,
+  SupervisorTabTypes,
+} from '@shareapp1/common-utils';
 import HomeScreen from './screens/home';
 
 const TabSettings: NavigationTabSettings = {

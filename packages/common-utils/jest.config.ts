@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'supervisee-ui',
+  displayName: 'common-utils',
   preset: 'react-native',
   testRunner: 'jest-jasmine2',
   resolver: '@nrwl/jest/plugins/resolver',
