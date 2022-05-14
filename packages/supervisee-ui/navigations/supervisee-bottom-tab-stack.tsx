@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import DashboardTabSettings from 'packages/supervisor-ui/tabs/dashboard/tab-settings';
-import CaseNotesTabSettings from 'packages/supervisee-ui/tabs/case-notes/tab-settings';
-import LearnTabSettings from 'packages/supervisee-ui/tabs/learn/tab-settings';
-import JobsTabSettings from 'packages/supervisee-ui/tabs/jobs/tab-settings';
-import NearMeTabSettings from 'packages/supervisee-ui/tabs/near-me/tab-settings';
-import { SuperviseeTabTypes } from 'packages/common-utils/src/types/navigation';
+import DashboardTabSettings from '../tabs/dashboard/tab-settings';
+import CaseNotesTabSettings from '../tabs/case-notes/tab-settings';
+import LearnTabSettings from '../tabs/learn/tab-settings';
+import JobsTabSettings from '../tabs/jobs/tab-settings';
+import NearMeTabSettings from '../tabs/near-me/tab-settings';
+import { SuperviseeTabTypes } from '@shareapp1/common-utils';
 
 type RootStackParamList = {
   Home: undefined;
@@ -34,7 +34,7 @@ const BottomTabStack = ({
   const filteredTabs = renderTabs
     ? tabs.filter((item) => {
         console.log(renderTabs, ':', item.type);
-        return renderTabs.includes(item.type);
+        return renderTabs.includes(item.type as SuperviseeTabTypes);
       })
     : tabs;
   return (

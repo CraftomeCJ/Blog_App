@@ -17,6 +17,9 @@
     "react-native-safe-area-context": "^4.2.5",
     "react-native-screens": "^3.13.1",
     "react-native-svg": "*",
-    "@react-navigation/bottom-tabs": "*"
+    "@react-navigation/bottom-tabs": "*",
+    "react-i18next": "*",
+    "recoil": "*",
+    "react-native-paper": "*"
   }
 }

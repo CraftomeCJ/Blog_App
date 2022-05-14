@@ -2,6 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { AppStack } from '@shareapp1/supervisor-ui';
 import { SupervisorTabTypes } from '@shareapp1/common-utils';
+import { AppProvider } from '@shareapp1/common-ui';
 
 //can select the tabs you want to display
 const renderTabs = [
@@ -13,9 +14,11 @@ const renderTabs = [
 ];
 export const App = () => {
   return (
-    <NavigationContainer>
-      <AppStack renderTabs={renderTabs} />
-    </NavigationContainer>
+    <AppProvider>
+      <NavigationContainer>
+        <AppStack renderTabs={renderTabs} />
+      </NavigationContainer>
+    </AppProvider>
   );
 };
 
