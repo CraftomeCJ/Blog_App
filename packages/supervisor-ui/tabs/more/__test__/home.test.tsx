@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
+import Home from '../screens/home';
 
-import AppStack from './app-stack';
-
-describe('AppStack', () => {
+describe('Supervisor UI:More:Home', () => {
   it('should render successfully', () => {
-    const { container } = render(<AppStack />);
+    const { container } = render(<Home />);
+
     expect(container).toBeTruthy();
   });
 });

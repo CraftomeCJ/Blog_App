@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import { SafeAreaView, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { MyButton, MyText } from '@shareapp1/common-ui';
 import { Text } from 'react-native';
+import MyButton from 'packages/common-ui/src/components/mybutton/mybutton';
+import MyText from 'packages/common-ui/src/components/mytext/mytext';
 
 const Dashboard: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);

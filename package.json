@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start:supervisor": "nx run-ios supervisor",
-    "start:supervisee": "nx run-ios supervisee"
+    "start:supervisee": "nx run-ios supervisee",
+    "test:supervisor": "npx nx test supervisor-ui --codeCoverage --no-cache",
+    "test:supervisee": "npx nx test supervisee-ui --codeCoverage --no-cache"
   },
   "private": true,
   "devDependencies": {
