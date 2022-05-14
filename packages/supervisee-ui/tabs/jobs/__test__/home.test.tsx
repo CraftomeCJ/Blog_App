@@ -1,11 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
+import Home from '../screens/home';
 
-import MyButton from './mybutton';
-
-describe('Button', () => {
+describe('Supervisee UI Home', () => {
   it('should render successfully', () => {
-    const { container } = render(<MyButton />);
+    const { container } = render(<Home />);
     expect(container).toBeTruthy();
   });
 });

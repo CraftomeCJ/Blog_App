@@ -1,18 +1,18 @@
 import React from 'react';
 
-import { View, Text, Button } from 'react-native';
+import { View, Button } from 'react-native';
 
 /* eslint-disable-next-line */
-export interface RedButtonProps {
+export interface MyButtonProps {
   onPress?: () => void;
 }
 
-export function MyButton(props: RedButtonProps) {
+const MyButton = (props: MyButtonProps) => {
   return (
     <View>
       <Button title={'My Button'} onPress={props?.onPress} />
     </View>
   );
-}
+};
 
 export default MyButton;

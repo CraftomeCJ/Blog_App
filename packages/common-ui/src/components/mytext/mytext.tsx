@@ -2,14 +2,16 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 /* eslint-disable-next-line */
-export interface RedButtonProps {}
+export interface MyTextProps {
+  text?: string;
+}
 
-export function MyText(props: RedButtonProps) {
+const MyText = (props: MyTextProps) => {
   return (
     <View>
-      <Text>My Text</Text>
+      <Text>{props.text ?? 'My Text'}</Text>
     </View>
   );
-}
+};
 
 export default MyText;

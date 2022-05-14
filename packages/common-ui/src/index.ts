@@ -1,2 +1,2 @@
-export * from './lib/mytext/mytext';
-export * from './lib/mybutton/mybutton';
+export * from './components/mytext/mytext';
+export * from './components/mybutton/mybutton';
