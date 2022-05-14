@@ -1,9 +1,8 @@
-import { navigation } from 'packages/supervisor-ui/tabs/dashboard/constants/navigation';
+import { navigation } from './constants/navigation';
 import {
   NavigationTabSettings,
   SupervisorTabTypes,
 } from '@shareapp1/common-utils';
-
 import DashboardScreen from './screens/dashboard';
 
 const TabSettings: NavigationTabSettings = {

@@ -1,4 +1,4 @@
-import { navigation } from 'packages/supervisor-ui/tabs/dashboard/constants/navigation';
+import { navigation } from './constants/navigation';
 import DashboardScreen from './screens/dashboard';
 import DetailScreen from './screens/detail';
 

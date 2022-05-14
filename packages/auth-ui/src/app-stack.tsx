@@ -1,7 +1,7 @@
 import WelcomeScreen from './screens/welcome';
 import LoginScreen from './screens/login';
 
-const appStack = [
+export const authScreens = [
   {
     name: 'Welcome',
     component: WelcomeScreen,
@@ -17,5 +17,3 @@ const appStack = [
     },
   },
 ];
-
-export default appStack;

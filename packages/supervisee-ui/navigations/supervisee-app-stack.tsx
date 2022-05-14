@@ -18,7 +18,7 @@ const tabScreens = [
   JobsTabAppStack,
   NearMeTabAppStack,
 ];
-const AppStack = ({ renderTabs }: SuperviseeAppStackProps) => {
+export const AppStack = ({ renderTabs }: SuperviseeAppStackProps) => {
   return (
     <Stack.Navigator
       initialRouteName={AuthAppStack[0].name}
@@ -45,5 +45,3 @@ const AppStack = ({ renderTabs }: SuperviseeAppStackProps) => {
     </Stack.Navigator>
   );
 };
-
-export default AppStack;

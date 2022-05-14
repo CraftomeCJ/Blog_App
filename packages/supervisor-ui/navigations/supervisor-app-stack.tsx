@@ -1,11 +1,11 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import AuthAppStack from 'packages/auth-ui/src/app-stack';
-import DashboardTabAppStack from 'packages/supervisor-ui/tabs/dashboard/app-stack';
-import SuperviseeTabAppStack from 'packages/supervisor-ui/tabs/supervisee/app-stack';
-import TasksTabAppStack from 'packages/supervisor-ui/tabs/tasks/app-stack';
-import ResourcesTabAppStack from 'packages/supervisor-ui/tabs/resources/app-stack';
-import MoreTabAppStack from 'packages/supervisor-ui/tabs/more/app-stack';
+import { authScreens } from '@shareapp1/auth-ui';
+import DashboardTabAppStack from '../tabs/dashboard/app-stack';
+import SuperviseeTabAppStack from '../tabs/supervisee/app-stack';
+import TasksTabAppStack from '../tabs/tasks/app-stack';
+import ResourcesTabAppStack from '../tabs/resources/app-stack';
+import MoreTabAppStack from '../tabs/more/app-stack';
 import BottomTabStack from './supervisor-bottom-tab-stack';
 import { SupervisorAppStackProps } from '@shareapp1/common-utils';
 
@@ -18,8 +18,8 @@ const tabScreens = [
   ResourcesTabAppStack,
   MoreTabAppStack,
 ];
-const tabs = includeAuth ? [AuthAppStack, ...tabScreens] : tabScreens;
-const AppStack = ({ renderTabs }: SupervisorAppStackProps) => {
+const tabs = includeAuth ? [authScreens, ...tabScreens] : tabScreens;
+export const AppStack = ({ renderTabs }: SupervisorAppStackProps) => {
   return (
     <Stack.Navigator
       initialRouteName={'Dashboard'}
@@ -46,5 +46,3 @@ const AppStack = ({ renderTabs }: SupervisorAppStackProps) => {
     </Stack.Navigator>
   );
 };
-
-export default AppStack;
