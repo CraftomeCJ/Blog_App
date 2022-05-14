@@ -13,24 +13,21 @@ export function Login(props: DashboardProps) {
   const scrollViewRef = useRef<null | ScrollView>(null);
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          ref={(ref) => {
-            scrollViewRef.current = ref;
+      <ScrollView
+        ref={(ref) => {
+          scrollViewRef.current = ref;
+        }}
+        contentInsetAdjustmentBehavior="automatic"
+        style={styles.scrollView}
+      >
+        <Text>Please Login!</Text>
+        <MyButton
+          onPress={() => {
+            navigate('');
           }}
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}
-        >
-          <Text>Please Login!</Text>
-          <MyButton
-            onPress={() => {
-              navigate('');
-            }}
-          />
-          <MyText />
-        </ScrollView>
-      </SafeAreaView>
+        />
+        <MyText />
+      </ScrollView>
     </>
   );
 }

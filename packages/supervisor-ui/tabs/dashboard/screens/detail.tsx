@@ -16,19 +16,17 @@ const Detail: React.FC = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          ref={(ref) => {
-            scrollViewRef.current = ref;
-          }}
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}
-        >
-          <Text>This is detail page</Text>
-          <MyButton onPress={() => navigate('Dashboard')} />
-          <MyText />
-        </ScrollView>
-      </SafeAreaView>
+      <ScrollView
+        ref={(ref) => {
+          scrollViewRef.current = ref;
+        }}
+        contentInsetAdjustmentBehavior="automatic"
+        style={styles.scrollView}
+      >
+        <Text>This is detail page</Text>
+        <MyButton onPress={() => navigate('Dashboard')} />
+        <MyText />
+      </ScrollView>
     </>
   );
 };

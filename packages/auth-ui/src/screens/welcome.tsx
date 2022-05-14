@@ -21,19 +21,16 @@ export function Welcome(props: DashboardProps) {
   const scrollViewRef = useRef<null | ScrollView>(null);
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          ref={(ref) => {
-            scrollViewRef.current = ref;
-          }}
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}
-        >
-          <Text>Welcome to SHARE APP!</Text>
-          <MyText />
-        </ScrollView>
-      </SafeAreaView>
+      <ScrollView
+        ref={(ref) => {
+          scrollViewRef.current = ref;
+        }}
+        contentInsetAdjustmentBehavior="automatic"
+        style={styles.scrollView}
+      >
+        <Text>Welcome to SHARE APP!</Text>
+        <MyText />
+      </ScrollView>
     </>
   );
 }

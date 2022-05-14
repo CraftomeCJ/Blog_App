@@ -14,20 +14,17 @@ const Dashboard: React.FC = () => {
   const { navigate } = useNavigation();
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          ref={(ref) => {
-            scrollViewRef.current = ref;
-          }}
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}
-        >
-          <Text>Welcome to dashboard!</Text>
-          <MyButton onPress={() => navigate('Detail')} />
-          <MyText />
-        </ScrollView>
-      </SafeAreaView>
+      <ScrollView
+        ref={(ref) => {
+          scrollViewRef.current = ref;
+        }}
+        contentInsetAdjustmentBehavior="automatic"
+        style={styles.scrollView}
+      >
+        <Text>Welcome to dashboard!</Text>
+        <MyButton onPress={() => navigate('Detail')} />
+        <MyText />
+      </ScrollView>
     </>
   );
 };
