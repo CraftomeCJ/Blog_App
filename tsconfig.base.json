@@ -15,11 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@shareapp1/auth-ui": ["packages/auth-ui/src/index.ts"],
       "@shareapp1/common-ui": ["packages/common-ui/src/index.ts"],
       "@shareapp1/common-utils": ["packages/common-utils/src/index.ts"],
       "@shareapp1/supervisee-ui": ["packages/supervisee-ui/index.ts"],
-      "@shareapp1/supervisor-ui": ["packages/supervisor-ui/index.ts"],
-      "@shareapp1/auth-ui": ["packages/auth-ui/src/index.ts"]
+      "@shareapp1/supervisor-ui": ["packages/supervisor-ui/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

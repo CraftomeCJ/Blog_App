@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "start:supervisor": "nx run-ios supervisor",
-    "start:supervisee": "nx run-ios supervisee",
-    "test:supervisor": "npx nx test supervisor-ui --codeCoverage --no-cache",
-    "test:supervisee": "npx nx test supervisee-ui --codeCoverage --no-cache",
-    "lint:supervisor:fix": "npx nx lint supervisor-ui --fix",
-    "lint:supervisee:fix": "npx nx lint supervisee-ui --fix"
+    "start:mha-share": "nx run-ios mha-share --no-cache",
+    "start:supervisor": "nx run-ios supervisor --no-cache",
+    "start:supervisee": "nx run-ios supervisee --no-cache",
+    "test:supervisor": "nx test supervisor-ui --codeCoverage --no-cache",
+    "test:supervisee": "nx test supervisee-ui --codeCoverage --no-cache",
+    "lint:supervisor:fix": "nx lint supervisor-ui --fix",
+    "lint:supervisee:fix": "nx lint supervisee-ui --fix"
   },
   "private": true,
   "devDependencies": {

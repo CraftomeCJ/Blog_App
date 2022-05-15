@@ -5,6 +5,7 @@
     "common-utils": "packages/common-utils",
     "supervisee-ui": "packages/supervisee-ui",
     "supervisor-ui": "packages/supervisor-ui",
+    "mha-share": "apps/mha-share",
     "supervisee": "apps/supervisee",
     "supervisor": "apps/supervisor"
   }

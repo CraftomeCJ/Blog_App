@@ -21,15 +21,14 @@ const tabScreens = [
   NearMeTabAppStack,
 ];
 export const AppStack = ({ renderTabs }: SuperviseeAppStackProps) => {
-  const { user, logOut } = useAuth();
+  const { user } = useAuth();
   console.log('Supervisee UI auth', user);
   if (!user || user.role !== UserType.Supervisee) {
-    logOut();
-    return null;
+    return <></>;
   }
   return (
     <Stack.Navigator
-      initialRouteName={DashboardTabAppStack[0].name}
+      initialRouteName={BottomTabStack.name}
       screenOptions={{ gestureEnabled: false }}
     >
       <Stack.Screen

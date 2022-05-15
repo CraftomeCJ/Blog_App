@@ -15,8 +15,7 @@ const Dashboard: React.FC = () => {
   const { navigate } = useNavigation();
   const { logOut } = useAuth();
   return (
-    <>
-      <ScrollView
+    <ScrollView
         ref={(ref) => {
           scrollViewRef.current = ref;
         }}
@@ -29,7 +28,6 @@ const Dashboard: React.FC = () => {
 
         <MyText />
       </ScrollView>
-    </>
   );
 };
 

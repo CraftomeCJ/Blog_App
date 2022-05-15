@@ -15,4 +15,6 @@ jest.mock('@react-navigation/native', () => {
     }),
   };
 });
-jest.mock('react-native-paper', () => {});
+jest.mock('react-native-paper', () => {
+  console.log('mock for react-native-pager');
+});

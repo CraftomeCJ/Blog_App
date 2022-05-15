@@ -14,8 +14,7 @@ const Home: React.FC = () => {
 
   const scrollViewRef = useRef<null | ScrollView>(null);
   return (
-    <>
-      <ScrollView
+    <ScrollView
         ref={(ref) => {
           scrollViewRef.current = ref;
         }}
@@ -26,7 +25,6 @@ const Home: React.FC = () => {
         <MyButton title="Logout" onPress={() => auth.logOut()} />
         <MyText />
       </ScrollView>
-    </>
   );
 };
 

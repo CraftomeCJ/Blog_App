@@ -21,10 +21,9 @@ const tabScreens = [
   MoreTabAppStack,
 ];
 export const AppStack = ({ renderTabs }: SupervisorAppStackProps) => {
-  const { user, logOut } = useAuth();
+  const { user } = useAuth();
   if (!user || user.role !== UserType.Supervisor) {
-    logOut();
-    return null;
+    return <></>;
   }
   console.log('Supervisor UI auth', user);
   console.log('tabScreens', tabScreens);

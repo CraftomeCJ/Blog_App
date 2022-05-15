@@ -4,6 +4,9 @@ import { AppStack } from '@shareapp1/supervisor-ui';
 import { SupervisorTabTypes } from '@shareapp1/common-utils';
 import { AppProvider } from '@shareapp1/common-ui';
 import { AuthStack } from '@shareapp1/auth-ui';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator<{}>();
 
 //can select the tabs you want to display
 const renderTabs = [

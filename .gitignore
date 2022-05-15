@@ -163,3 +163,4 @@ buck-out/
 /
 
 packages/supervisor-e2e/artifacts
+packages/mha-share-e2e/artifacts
