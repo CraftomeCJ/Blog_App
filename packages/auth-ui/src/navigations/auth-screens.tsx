@@ -1,5 +1,5 @@
-import WelcomeScreen from './screens/welcome';
-import LoginScreen from './screens/login';
+import WelcomeScreen from '../screens/welcome';
+import LoginScreen from '../screens/login';
 
 export const authScreens = [
   {

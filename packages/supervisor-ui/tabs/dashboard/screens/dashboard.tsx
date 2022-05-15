@@ -8,10 +8,12 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { MyText, MyButton } from '@shareapp1/common-ui';
+import { useAuth } from '@shareapp1/common-utils';
 
 const Dashboard: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);
   const { navigate } = useNavigation();
+  const { logOut } = useAuth();
   return (
     <>
       <ScrollView
@@ -23,6 +25,8 @@ const Dashboard: React.FC = () => {
       >
         <Text>Welcome to dashboard!</Text>
         <MyButton onPress={() => navigate('Detail')} />
+        <MyButton title="Logout" onPress={logOut} />
+
         <MyText />
       </ScrollView>
     </>

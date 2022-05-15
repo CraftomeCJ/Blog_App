@@ -1,16 +1,18 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { authScreens } from '@shareapp1/auth-ui';
 import DashboardTabAppStack from '../tabs/dashboard/app-stack';
 import SuperviseeTabAppStack from '../tabs/supervisee/app-stack';
 import TasksTabAppStack from '../tabs/tasks/app-stack';
 import ResourcesTabAppStack from '../tabs/resources/app-stack';
 import MoreTabAppStack from '../tabs/more/app-stack';
 import BottomTabStack from './bottom-tab-stack';
-import { SupervisorAppStackProps } from '@shareapp1/common-utils';
+import {
+  SupervisorAppStackProps,
+  useAuth,
+  UserType,
+} from '@shareapp1/common-utils';
 
 const Stack = createStackNavigator<{ SuperVisorDashboardHome: undefined }>();
-const includeAuth = true;
 const tabScreens = [
   DashboardTabAppStack,
   SuperviseeTabAppStack,
@@ -18,8 +20,15 @@ const tabScreens = [
   ResourcesTabAppStack,
   MoreTabAppStack,
 ];
-const tabs = includeAuth ? [authScreens, ...tabScreens] : tabScreens;
 export const AppStack = ({ renderTabs }: SupervisorAppStackProps) => {
+  const { user, logOut } = useAuth();
+  if (!user || user.role !== UserType.Supervisor) {
+    logOut();
+    return null;
+  }
+  console.log('Supervisor UI auth', user);
+  console.log('tabScreens', tabScreens);
+
   return (
     <Stack.Navigator
       initialRouteName={'Dashboard'}
@@ -33,7 +42,7 @@ export const AppStack = ({ renderTabs }: SupervisorAppStackProps) => {
       >
         {(props) => <BottomTabStack {...props} renderTabs={renderTabs} />}
       </Stack.Screen>
-      {tabs.map((tab) =>
+      {tabScreens.map((tab) =>
         tab.map((screen) => (
           <Stack.Screen
             name={screen.name}

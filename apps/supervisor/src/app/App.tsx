@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { AppStack } from '@shareapp1/supervisor-ui';
 import { SupervisorTabTypes } from '@shareapp1/common-utils';
 import { AppProvider } from '@shareapp1/common-ui';
+import { AuthStack } from '@shareapp1/auth-ui';
 
 //can select the tabs you want to display
 const renderTabs = [
@@ -17,6 +18,7 @@ export const App = () => {
     <AppProvider>
       <NavigationContainer>
         <AppStack renderTabs={renderTabs} />
+        <AuthStack />
       </NavigationContainer>
     </AppProvider>
   );

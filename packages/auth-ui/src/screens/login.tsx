@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
-import { SafeAreaView, StyleSheet, ScrollView, StatusBar } from 'react-native';
+import { SafeAreaView, StyleSheet, ScrollView, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { MyButton, MyText } from '@shareapp1/common-ui';
-
-import { Text } from 'react-native';
+import { useAuth, useAuthState, UserType } from '@shareapp1/common-utils';
 
 /* eslint-disable-next-line */
 export interface DashboardProps {}
@@ -11,6 +10,8 @@ export interface DashboardProps {}
 export function Login(props: DashboardProps) {
   const { navigate } = useNavigation();
   const scrollViewRef = useRef<null | ScrollView>(null);
+  const auth = useAuth();
+
   return (
     <>
       <ScrollView
@@ -22,8 +23,15 @@ export function Login(props: DashboardProps) {
       >
         <Text>Please Login!</Text>
         <MyButton
+          title={'Login as Supervisee'}
           onPress={() => {
-            navigate('');
+            auth.logIn({ role: UserType.Supervisee });
+          }}
+        />
+        <MyButton
+          title={'Login as Supervisor'}
+          onPress={() => {
+            auth.logIn({ role: UserType.Supervisor });
           }}
         />
         <MyText />

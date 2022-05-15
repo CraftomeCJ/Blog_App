@@ -6,6 +6,7 @@ export const [useAuth, AuthProvider] = createContext<Auth>();
 
 export const useAuthState = (initial?: User): Auth => {
   const [user, setUser] = useState<User | undefined>(initial);
+  console.log('useAuthState', user);
   return {
     user,
     logIn: setUser,

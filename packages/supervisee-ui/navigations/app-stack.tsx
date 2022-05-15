@@ -5,12 +5,14 @@ import CaseNotesTabAppStack from '../tabs/case-notes/app-stack';
 import LearnTabAppStack from '../tabs/learn/app-stack';
 import JobsTabAppStack from '../tabs/jobs/app-stack';
 import NearMeTabAppStack from '../tabs/near-me/app-stack';
-import { authScreens } from '@shareapp1/auth-ui';
 import BottomTabStack from './bottom-tab-stack';
-import { SuperviseeAppStackProps } from '@shareapp1/common-utils';
+import {
+  SuperviseeAppStackProps,
+  useAuth,
+  UserType,
+} from '@shareapp1/common-utils';
 
 const Stack = createStackNavigator<{ SuperVisorDashboardHome: undefined }>();
-const includeAuth = false;
 const tabScreens = [
   DashboardTabAppStack,
   CaseNotesTabAppStack,
@@ -19,13 +21,19 @@ const tabScreens = [
   NearMeTabAppStack,
 ];
 export const AppStack = ({ renderTabs }: SuperviseeAppStackProps) => {
+  const { user, logOut } = useAuth();
+  console.log('Supervisee UI auth', user);
+  if (!user || user.role !== UserType.Supervisee) {
+    logOut();
+    return null;
+  }
   return (
     <Stack.Navigator
-      initialRouteName={authScreens[0].name}
+      initialRouteName={DashboardTabAppStack[0].name}
       screenOptions={{ gestureEnabled: false }}
     >
       <Stack.Screen
-        name={'SuperviseeTabs'}
+        name={BottomTabStack.name}
         options={{
           headerLeft: () => null,
         }}

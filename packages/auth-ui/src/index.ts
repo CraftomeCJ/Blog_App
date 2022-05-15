@@ -1,1 +1,1 @@
-export * from './app-stack';
+export * from './navigations/app-stack';
