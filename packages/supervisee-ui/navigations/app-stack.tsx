@@ -22,7 +22,6 @@ const tabScreens = [
 ];
 export const AppStack = ({ renderTabs }: SuperviseeAppStackProps) => {
   const { user } = useAuth();
-  console.log('Supervisee UI auth', user);
   if (!user || user.role !== UserType.Supervisee) {
     return <></>;
   }
