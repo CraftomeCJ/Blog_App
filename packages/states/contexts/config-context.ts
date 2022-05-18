@@ -1,5 +1,5 @@
 import createContext from './create-context';
-import { useLang } from '@shareapp1/utilities';
+import { useLang } from '@shareapp1/hooks';
 import { Config, InitialConfigState } from '@shareapp1/types';
 
 export const [useConfig, ConfigProvider] = createContext<Config>();

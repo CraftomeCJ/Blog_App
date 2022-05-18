@@ -3,7 +3,7 @@ import { RecoilRoot } from 'recoil';
 import { Provider as PaperProvider } from 'react-native-paper';
 
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { AuthProvider, ConfigProvider, useAuthState, useConfigState } from '@shareapp1/data';
+import { AuthProvider, ConfigProvider, useAuthState, useConfigState } from '@shareapp1/states';
 
 
 type AppProviderProps = { children?: React.ReactNode };

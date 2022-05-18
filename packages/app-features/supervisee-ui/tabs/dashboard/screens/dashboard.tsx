@@ -7,7 +7,7 @@ import {
   Text,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { useAuth } from '@shareapp1/data';
+import { useAuth } from '@shareapp1/states';
 import { MyButton, MyText } from '@shareapp1/common-ui/react-native';
 
 const Dashboard: React.FC = () => {

@@ -1,16 +1,17 @@
 {
   "version": 2,
   "projects": {
+    "api": "packages/api",
     "auth-ui": "packages/app-features/auth-ui",
     "common-ui-rn": "packages/common-ui/react-native",
     "constants": "packages/constants",
-    "data": "packages/data",
+    "hooks": "packages/hooks",
     "mha-share": "apps/mha-share",
+    "states": "packages/states",
     "supervisee": "apps/supervisee",
     "supervisee-ui": "packages/app-features/supervisee-ui",
     "supervisor": "apps/supervisor",
     "supervisor-ui": "packages/app-features/supervisor-ui",
-    "tests": "packages/tests",
     "types": "packages/types",
     "utilities": "packages/utilities"
   }

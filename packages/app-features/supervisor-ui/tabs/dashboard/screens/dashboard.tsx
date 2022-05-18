@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { MyText, MyButton } from '@shareapp1/common-ui/react-native';
-import { useAuth } from '@shareapp1/data';
+import { useAuth } from '@shareapp1/states';
 
 const Dashboard: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);

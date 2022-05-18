@@ -15,22 +15,23 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@shareapp1/api": ["packages/api/index.ts"],
       "@shareapp1/auth-ui": ["packages/app-features/auth-ui/src/index.ts"],
       "@shareapp1/common-ui/react-native": [
         "packages/common-ui/react-native/src/index.ts"
       ],
-      "@shareapp1/constants": ["packages/constants/src/index.ts"],
-      "@shareapp1/data": ["packages/data/src/index.ts"],
+      "@shareapp1/constants": ["packages/constants/index.ts"],
       "@shareapp1/features": ["packages/app-features/index.ts"],
+      "@shareapp1/hooks": ["packages/hooks/index.ts"],
+      "@shareapp1/states": ["packages/states/index.ts"],
       "@shareapp1/supervisee-ui": [
         "packages/app-features/supervisee-ui/index.ts"
       ],
       "@shareapp1/supervisor-ui": [
         "packages/app-features/supervisor-ui/index.ts"
       ],
-      "@shareapp1/tests": ["packages/tests/src/index.ts"],
-      "@shareapp1/types": ["packages/types/src/index.ts"],
-      "@shareapp1/utilities": ["packages/utilities/src/index.ts"]
+      "@shareapp1/types": ["packages/types/index.ts"],
+      "@shareapp1/utilities": ["packages/utilities/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"],

@@ -1,6 +1,7 @@
 export enum UserType {
   Supervisee = 'Supervisee',
   Supervisor = 'Supervisor',
+  Unauthenticated = 'Unauthenticated',
 }
 export interface User {
   role: UserType;

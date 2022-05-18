@@ -6,7 +6,7 @@ import LearnTabAppStack from '../tabs/learn/app-stack';
 import JobsTabAppStack from '../tabs/jobs/app-stack';
 import NearMeTabAppStack from '../tabs/near-me/app-stack';
 import BottomTabStack from './bottom-tab-stack';
-import { useAuth } from '@shareapp1/data';
+import { useAuth } from '@shareapp1/states';
 import {
   SuperviseeAppStackProps,
   UserType,

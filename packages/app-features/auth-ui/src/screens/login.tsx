@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { SafeAreaView, StyleSheet, ScrollView, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { useAuth, useAuthState } from '@shareapp1/data';
+import { useAuth, useAuthState } from '@shareapp1/states';
 import { UserType } from '@shareapp1/types';
 import { MyButton, MyText } from '@shareapp1/common-ui/react-native';
 

@@ -7,7 +7,7 @@ import {
   Text,
 } from 'react-native';
 import { MyButton, MyText } from '@shareapp1/common-ui/react-native';
-import { useAuth } from '@shareapp1/data';
+import { useAuth } from '@shareapp1/states';
 
 const Home: React.FC = () => {
   const auth = useAuth();
