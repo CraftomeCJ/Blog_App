@@ -15,5 +15,20 @@
       }
     }
   },
-  "defaultProject": "mha-share"
+  "defaultProject": "mha-share",
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    }
+  },
+  "pluginsConfig": {
+    "@nrwl/jest": {
+      "hashingExcludesTestsOfDeps": true
+    },
+    "@nrwl/cypress": {
+      "hashingExcludesTestsOfDeps": true
+    }
+  }
 }

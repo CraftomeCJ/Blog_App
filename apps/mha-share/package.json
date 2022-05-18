@@ -20,6 +20,7 @@
     "react-i18next": "*",
     "@react-navigation/bottom-tabs": "*",
     "recoil": "*",
-    "react-native-paper": "*"
+    "react-native-paper": "*",
+    "@testing-library/react": "*"
   }
 }
