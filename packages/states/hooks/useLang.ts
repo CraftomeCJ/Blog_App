@@ -1,6 +1,8 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { LangConfig, LangKey } from '@shareapp1/types';
+import { useRecoilState } from 'recoil';
+import { langState } from '../atoms/langState';
 
 export const Languages: { [key in LangKey]: { name: string } } = {
   en: { name: 'English' },
@@ -10,7 +12,7 @@ export const Languages: { [key in LangKey]: { name: string } } = {
 };
 
 export const useLang = (initial?: LangKey): LangConfig => {
-  const [current, setCurrent] = useState<LangKey>();
+  const [current, setCurrent] = useRecoilState<LangKey>(langState);
   const { i18n } = useTranslation();
 
   const set = useCallback(

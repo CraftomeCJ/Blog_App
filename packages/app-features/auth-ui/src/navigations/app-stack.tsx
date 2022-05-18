@@ -5,8 +5,8 @@ import { authScreens } from './auth-screens';
 
 const Stack = createStackNavigator<{ Welcome: undefined }>();
 export const AuthStack = () => {
-  const { user } = useAuth();
-  if (user) {
+  const { user, isAuthenticated } = useAuth();
+  if (isAuthenticated()) {
     return null;
   }
   return (

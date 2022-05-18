@@ -1,19 +1,19 @@
 import {useRecoilState} from "recoil";
-import { UserType } from "../../types";
-import authState from "../atoms/AuthState";
+import { Auth, UserType, User } from "@shareapp1/types";
+import { authState } from "../atoms/authState";
 
-const useAuth = () => {
+export const useAuth = (): Auth => {
   const [user, setUser] = useRecoilState(authState);
 
   const logOut = () => {
-    setUser({role: UserType.Unauthenticated});
+    const user: User = {role: UserType.Unauthenticated}
+    setUser(() => user);
   }
 
   return {
     user,
     logIn: setUser,
     logOut,
+    isAuthenticated: () => user.role !== UserType.Unauthenticated
   }
 }
-
-export default useAuth;

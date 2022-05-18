@@ -22,7 +22,6 @@
       ],
       "@shareapp1/constants": ["packages/constants/index.ts"],
       "@shareapp1/features": ["packages/app-features/index.ts"],
-      "@shareapp1/hooks": ["packages/hooks/index.ts"],
       "@shareapp1/states": ["packages/states/index.ts"],
       "@shareapp1/supervisee-ui": [
         "packages/app-features/supervisee-ui/index.ts"

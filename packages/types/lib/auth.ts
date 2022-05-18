@@ -11,4 +11,5 @@ export interface Auth {
   user?: User;
   logIn: (user: User) => void;
   logOut: () => void;
+  isAuthenticated: () => boolean;
 }
