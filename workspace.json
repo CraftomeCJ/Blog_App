@@ -1,17 +1,17 @@
 {
   "version": 2,
   "projects": {
-    "api": "packages/api",
-    "auth-ui": "packages/app-features/auth-ui",
-    "common-ui-rn": "packages/common-ui/react-native",
-    "constants": "packages/constants",
+    "api": "packages/rn-commons/api",
+    "auth-ui": "packages/rn-apps/auth-ui",
+    "rn-commons-ui": "packages/rn-commons/ui/",
+    "constants": "packages/rn-commons/constants",
     "mha-share": "apps/mha-share",
-    "states": "packages/states",
+    "states": "packages/rn-commons/states",
     "supervisee": "apps/supervisee",
-    "supervisee-ui": "packages/app-features/supervisee-ui",
+    "supervisee-ui": "packages/rn-apps/supervisee-ui",
     "supervisor": "apps/supervisor",
-    "supervisor-ui": "packages/app-features/supervisor-ui",
-    "types": "packages/types",
-    "utilities": "packages/utilities"
+    "supervisor-ui": "packages/rn-apps/supervisor-ui",
+    "types": "packages/rn-commons/types",
+    "utilities": "packages/rn-commons/utilities"
   }
 }

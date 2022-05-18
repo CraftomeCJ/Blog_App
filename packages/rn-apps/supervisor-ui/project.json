@@ -1,0 +1,24 @@
+{
+  "sourceRoot": "packages/rn-apps/supervisor-ui/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/rn-apps/supervisor-ui/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/rn-apps/supervisor-ui"],
+      "options": {
+        "jestConfig": "packages/rn-apps/supervisor-ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

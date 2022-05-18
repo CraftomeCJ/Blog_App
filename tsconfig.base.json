@@ -15,22 +15,15 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@shareapp1/api": ["packages/api/index.ts"],
-      "@shareapp1/auth-ui": ["packages/app-features/auth-ui/src/index.ts"],
-      "@shareapp1/common-ui/react-native": [
-        "packages/common-ui/react-native/src/index.ts"
-      ],
-      "@shareapp1/constants": ["packages/constants/index.ts"],
-      "@shareapp1/features": ["packages/app-features/index.ts"],
-      "@shareapp1/states": ["packages/states/index.ts"],
-      "@shareapp1/supervisee-ui": [
-        "packages/app-features/supervisee-ui/index.ts"
-      ],
-      "@shareapp1/supervisor-ui": [
-        "packages/app-features/supervisor-ui/index.ts"
-      ],
-      "@shareapp1/types": ["packages/types/index.ts"],
-      "@shareapp1/utilities": ["packages/utilities/index.ts"]
+      "@shareapp1/api": ["packages/rn-commons/api/index.ts"],
+      "@shareapp1/auth-ui": ["packages/rn-apps/auth-ui/src/index.ts"],
+      "@shareapp1/ui/": ["packages/rn-commons/ui/src/index.ts"],
+      "@shareapp1/constants": ["packages/rn-commons/constants/index.ts"],
+      "@shareapp1/states": ["packages/rn-commons/states/index.ts"],
+      "@shareapp1/supervisee-ui": ["packages/rn-apps/supervisee-ui/index.ts"],
+      "@shareapp1/supervisor-ui": ["packages/rn-apps/supervisor-ui/index.ts"],
+      "@shareapp1/types": ["packages/rn-commons/types/index.ts"],
+      "@shareapp1/utilities": ["packages/rn-commons/utilities/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"],
