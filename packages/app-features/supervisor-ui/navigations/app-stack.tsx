@@ -6,7 +6,7 @@ import TasksTabAppStack from '../tabs/tasks/app-stack';
 import ResourcesTabAppStack from '../tabs/resources/app-stack';
 import MoreTabAppStack from '../tabs/more/app-stack';
 import BottomTabStack from './bottom-tab-stack';
-import { useAuth } from '@shareapp1/data';
+import { useAuth } from '@shareapp1/states';
 import {
   SupervisorAppStackProps,
   UserType,

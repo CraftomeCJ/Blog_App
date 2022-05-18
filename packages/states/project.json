@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/utilities",
+  "sourceRoot": "packages/states",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -8,14 +8,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/utilities/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["packages/states/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/utilities"],
+      "outputs": ["coverage/packages/states"],
       "options": {
-        "jestConfig": "packages/utilities/jest.config.ts",
+        "jestConfig": "packages/states/jest.config.ts",
         "passWithNoTests": true
       }
     }

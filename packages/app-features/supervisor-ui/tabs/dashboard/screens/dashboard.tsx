@@ -8,12 +8,12 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { MyText, MyButton } from '@shareapp1/common-ui/react-native';
-import { useAuth } from '@shareapp1/data';
+import { useAuth } from '@shareapp1/states';
 
 const Dashboard: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);
   const { navigate } = useNavigation();
-  const { logOut } = useAuth();
+  const { user, logOut } = useAuth();
   return (
     <ScrollView
         ref={(ref) => {
@@ -22,7 +22,7 @@ const Dashboard: React.FC = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={styles.scrollView}
       >
-        <Text>Welcome to dashboard!</Text>
+        <Text>Welcome to dashboard {user?.role}!</Text>
         <MyButton onPress={() => navigate('Detail')} />
         <MyButton title="Logout" onPress={logOut} />
 

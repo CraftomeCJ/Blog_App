@@ -1,10 +1,10 @@
 /* eslint-disable */
 export default {
-  displayName: 'data',
+  displayName: 'api',
   preset: '../../jest.preset.js',
   transform: {
     '^.+\\.[tj]sx?$': 'babel-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/packages/data',
+  coverageDirectory: '../../coverage/packages/api',
 };

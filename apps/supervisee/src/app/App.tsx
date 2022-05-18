@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { SuperviseeTabTypes } from '@shareapp1/utilities';
+import { SuperviseeTabTypes } from '@shareapp1/types';
 import { AppStack } from '@shareapp1/supervisee-ui';
 import { AppProvider } from '@shareapp1/common-ui/react-native';
 import { AuthStack } from '@shareapp1/auth-ui';

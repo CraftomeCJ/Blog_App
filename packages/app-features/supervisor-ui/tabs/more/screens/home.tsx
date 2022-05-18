@@ -7,10 +7,10 @@ import {
   Text,
 } from 'react-native';
 import { MyButton, MyText } from '@shareapp1/common-ui/react-native';
-import { useAuth } from '@shareapp1/data';
+import { useAuth } from '@shareapp1/states';
 
 const Home: React.FC = () => {
-  const auth = useAuth();
+  const {logOut} = useAuth();
 
   const scrollViewRef = useRef<null | ScrollView>(null);
   return (
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         style={styles.scrollView}
       >
         <Text>Welcome to Supervisor More Tab!</Text>
-        <MyButton title="Logout" onPress={() => auth.logOut()} />
+        <MyButton title="Logout" onPress={() => logOut()} />
         <MyText />
       </ScrollView>
   );
