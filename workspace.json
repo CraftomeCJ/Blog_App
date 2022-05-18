@@ -1,12 +1,17 @@
 {
   "version": 2,
   "projects": {
-    "common-ui": "packages/common-ui",
-    "common-utils": "packages/common-utils",
-    "supervisee-ui": "packages/supervisee-ui",
-    "supervisor-ui": "packages/supervisor-ui",
+    "auth-ui": "packages/app-features/auth-ui",
+    "common-ui-rn": "packages/common-ui/react-native",
+    "constants": "packages/constants",
+    "data": "packages/data",
     "mha-share": "apps/mha-share",
     "supervisee": "apps/supervisee",
-    "supervisor": "apps/supervisor"
+    "supervisee-ui": "packages/app-features/supervisee-ui",
+    "supervisor": "apps/supervisor",
+    "supervisor-ui": "packages/app-features/supervisor-ui",
+    "tests": "packages/tests",
+    "types": "packages/types",
+    "utilities": "packages/utilities"
   }
 }
