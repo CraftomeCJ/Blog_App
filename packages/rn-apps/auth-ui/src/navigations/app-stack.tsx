@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { useAuth } from 'packages/rn-commons/states';
+import { useAuth } from '@shareapp1/states';
 import { authScreens } from './auth-screens';
 
 const Stack = createStackNavigator<{ Welcome: undefined }>();

@@ -6,5 +6,5 @@ export default {
     '^.+\\.[tj]sx?$': 'babel-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/packages/rn-commons/states',
+  coverageDirectory: '../../coverage/@shareapp1/states',
 };

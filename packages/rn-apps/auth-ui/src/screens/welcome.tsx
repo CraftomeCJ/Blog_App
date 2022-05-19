@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import { SafeAreaView, StyleSheet, ScrollView, StatusBar } from 'react-native';
+import { StyleSheet, ScrollView, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import { Text } from 'react-native';
-import { MyText } from 'packages/rn-commons/ui/src';
+import { MyText } from '@shareapp1/ui';
 
 /* eslint-disable-next-line */
 export interface DashboardProps {}

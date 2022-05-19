@@ -6,11 +6,8 @@ import TasksTabAppStack from '../tabs/tasks/app-stack';
 import ResourcesTabAppStack from '../tabs/resources/app-stack';
 import MoreTabAppStack from '../tabs/more/app-stack';
 import BottomTabStack from './bottom-tab-stack';
-import { useAuth } from 'packages/rn-commons/states';
-import {
-  SupervisorAppStackProps,
-  UserType,
-} from '@shareapp1/types';
+import { useAuth } from '@shareapp1/states';
+import { SupervisorAppStackProps, UserType } from '@shareapp1/types';
 
 const Stack = createStackNavigator<{ SuperVisorDashboardHome: undefined }>();
 const tabScreens = [

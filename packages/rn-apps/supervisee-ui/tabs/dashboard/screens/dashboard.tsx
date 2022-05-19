@@ -1,14 +1,8 @@
 import React, { useRef } from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  StatusBar,
-  Text,
-} from 'react-native';
+import { StyleSheet, ScrollView, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { useAuth } from 'packages/rn-commons/states';
-import { MyButton, MyText } from 'packages/rn-commons/ui/src';
+import { useAuth } from '@shareapp1/states';
+import { MyButton, MyText } from '@shareapp1/ui';
 
 const Dashboard: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);

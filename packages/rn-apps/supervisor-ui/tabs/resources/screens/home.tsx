@@ -6,21 +6,21 @@ import {
   StatusBar,
   Text,
 } from 'react-native';
-import { MyText } from 'packages/rn-commons/ui/src';
+import { MyText } from '@shareapp1/ui';
 
 const Home: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);
   return (
     <ScrollView
-        ref={(ref) => {
-          scrollViewRef.current = ref;
-        }}
-        contentInsetAdjustmentBehavior="automatic"
-        style={styles.scrollView}
-      >
-        <Text>Welcome to Supervisor Resources Tab!</Text>
-        <MyText />
-      </ScrollView>
+      ref={(ref) => {
+        scrollViewRef.current = ref;
+      }}
+      contentInsetAdjustmentBehavior="automatic"
+      style={styles.scrollView}
+    >
+      <Text>Welcome to Supervisor Resources Tab!</Text>
+      <MyText />
+    </ScrollView>
   );
 };
 

@@ -7,8 +7,8 @@ import {
   Text,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { MyText, MyButton } from 'packages/rn-commons/ui/src';
-import { useAuth } from 'packages/rn-commons/states';
+import { MyText, MyButton } from '@shareapp1/ui';
+import { useAuth } from '@shareapp1/states';
 
 const Dashboard: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);
@@ -16,18 +16,18 @@ const Dashboard: React.FC = () => {
   const { user, logOut } = useAuth();
   return (
     <ScrollView
-        ref={(ref) => {
-          scrollViewRef.current = ref;
-        }}
-        contentInsetAdjustmentBehavior="automatic"
-        style={styles.scrollView}
-      >
-        <Text>Welcome to dashboard {user?.role}!</Text>
-        <MyButton onPress={() => navigate('Detail')} />
-        <MyButton title="Logout" onPress={logOut} />
+      ref={(ref) => {
+        scrollViewRef.current = ref;
+      }}
+      contentInsetAdjustmentBehavior="automatic"
+      style={styles.scrollView}
+    >
+      <Text>Welcome to dashboard {user?.role}!</Text>
+      <MyButton onPress={() => navigate('Detail')} />
+      <MyButton title="Logout" onPress={logOut} />
 
-        <MyText />
-      </ScrollView>
+      <MyText />
+    </ScrollView>
   );
 };
 

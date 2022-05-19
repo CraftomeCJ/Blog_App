@@ -17,7 +17,7 @@
     "paths": {
       "@shareapp1/api": ["packages/rn-commons/api/index.ts"],
       "@shareapp1/auth-ui": ["packages/rn-apps/auth-ui/src/index.ts"],
-      "@shareapp1/ui/": ["packages/rn-commons/ui/src/index.ts"],
+      "@shareapp1/ui": ["packages/rn-commons/ui/src/index.ts"],
       "@shareapp1/constants": ["packages/rn-commons/constants/index.ts"],
       "@shareapp1/states": ["packages/rn-commons/states/index.ts"],
       "@shareapp1/supervisee-ui": ["packages/rn-apps/supervisee-ui/index.ts"],

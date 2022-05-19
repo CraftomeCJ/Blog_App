@@ -1,16 +1,16 @@
 {
   "version": 2,
   "projects": {
-    "api": "packages/rn-commons/api",
-    "auth-ui": "packages/rn-apps/auth-ui",
-    "rn-commons-ui": "packages/rn-commons/ui/",
-    "constants": "packages/rn-commons/constants",
     "mha-share": "apps/mha-share",
-    "states": "packages/rn-commons/states",
     "supervisee": "apps/supervisee",
-    "supervisee-ui": "packages/rn-apps/supervisee-ui",
     "supervisor": "apps/supervisor",
+    "auth-ui": "packages/rn-apps/auth-ui",
     "supervisor-ui": "packages/rn-apps/supervisor-ui",
+    "supervisee-ui": "packages/rn-apps/supervisee-ui",
+    "api": "packages/rn-commons/api",
+    "constants": "packages/rn-commons/constants",
+    "rn-commons-ui": "packages/rn-commons/ui",
+    "states": "packages/rn-commons/states",
     "types": "packages/rn-commons/types",
     "utilities": "packages/rn-commons/utilities"
   }

@@ -7,7 +7,7 @@ import {
   StatusBar,
   Text,
 } from 'react-native';
-import { MyText, MyButton } from 'packages/rn-commons/ui/src';
+import { MyText, MyButton } from '@shareapp1/ui';
 
 const Detail: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);

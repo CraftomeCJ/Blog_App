@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { AppStack as SuperviseeAppStack } from '@shareapp1/supervisee-ui';
 import { AppStack as SupervisorAppStack } from '@shareapp1/supervisor-ui';
 import { AuthStack } from '@shareapp1/auth-ui';
-import { AppProvider } from 'packages/rn-commons/ui/src';
+import { AppProvider } from '@shareapp1/ui';
 
 export const App = () => {
   return (
