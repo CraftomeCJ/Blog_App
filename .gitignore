@@ -157,8 +157,7 @@ buck-out/
 
 # Ruby / CocoaPods
 /apps/**/ios/Pods/
-/apps/**/android/app/src/
-!/apps/**/android/local.properties
+/apps/**/android/app/build/
 
 /vendor/bundle/
 /
