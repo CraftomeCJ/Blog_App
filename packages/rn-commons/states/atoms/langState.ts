@@ -1,7 +1,7 @@
 import { atom } from 'recoil';
-import { LangKey } from '@shareapp1/types';
+import { LangKey } from '../../types';
 
 export const langState = atom<LangKey>({
   key: 'langState',
-  default: 'en' ,
+  default: 'en',
 });

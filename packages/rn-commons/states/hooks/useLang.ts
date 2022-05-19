@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { LangConfig, LangKey } from '@shareapp1/types';
+import { LangConfig, LangKey } from '../../types';
 import { useRecoilState } from 'recoil';
 import { langState } from '../atoms/langState';
 

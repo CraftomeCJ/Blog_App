@@ -1,5 +1,5 @@
 import { useRecoilState } from 'recoil';
-import { Auth, UserType, User } from '@shareapp1/types';
+import { Auth, UserType, User } from '../../types';
 import { authState } from '../atoms/authState';
 
 export const useAuth = (): Auth => {
