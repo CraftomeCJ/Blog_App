@@ -11,8 +11,7 @@
     "start:supervisee:android": "nx run-android supervisee --no-cache",
     "test:supervisor": "nx test supervisor-ui --codeCoverage --no-cache",
     "test:supervisee": "nx test supervisee-ui --codeCoverage --no-cache",
-    "lint:supervisor:fix": "nx lint supervisor-ui --fix",
-    "lint:supervisee:fix": "nx lint supervisee-ui --fix"
+    "lint": "nx run-many --all --target=lint --fix"
   },
   "private": true,
   "devDependencies": {

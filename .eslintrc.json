@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["**/*"],
+  "ignorePatterns": ["jest.*.ts"],
   "plugins": ["@nrwl/nx", "react-hooks"],
   "overrides": [
     {
@@ -35,7 +35,8 @@
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": [
-      "warn", {
+      "warn",
+      {
         "additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
       }
     ]

@@ -14,8 +14,7 @@ export function Login(props: DashboardProps) {
   const { logIn } = useAuth();
 
   return (
-    <>
-      <ScrollView
+    <ScrollView
         ref={(ref) => {
           scrollViewRef.current = ref;
         }}
@@ -37,7 +36,6 @@ export function Login(props: DashboardProps) {
         />
         <MyText />
       </ScrollView>
-    </>
   );
 }
 

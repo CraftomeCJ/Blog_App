@@ -19,8 +19,7 @@ export function Welcome(props: DashboardProps) {
 
   const scrollViewRef = useRef<null | ScrollView>(null);
   return (
-    <>
-      <ScrollView
+    <ScrollView
         ref={(ref) => {
           scrollViewRef.current = ref;
         }}
@@ -30,7 +29,6 @@ export function Welcome(props: DashboardProps) {
         <Text>Welcome to SHARE APP!</Text>
         <MyText />
       </ScrollView>
-    </>
   );
 }
 

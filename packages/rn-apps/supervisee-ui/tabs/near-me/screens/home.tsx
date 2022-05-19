@@ -11,8 +11,7 @@ import { MyText } from '@shareapp1/ui';
 const Home: React.FC = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);
   return (
-    <>
-      <ScrollView
+    <ScrollView
         ref={(ref) => {
           scrollViewRef.current = ref;
         }}
@@ -22,7 +21,6 @@ const Home: React.FC = () => {
         <Text>Welcome to Supervisee Near Me Tab!</Text>
         <MyText />
       </ScrollView>
-    </>
   );
 };
 

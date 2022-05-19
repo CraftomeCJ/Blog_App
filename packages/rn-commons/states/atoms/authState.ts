@@ -1,5 +1,5 @@
 import { atom } from 'recoil';
-import { User, UserType } from '../../types';
+import { User, UserType } from '@shareapp1/types';
 
 export const authState = atom<User>({
   key: 'authState',

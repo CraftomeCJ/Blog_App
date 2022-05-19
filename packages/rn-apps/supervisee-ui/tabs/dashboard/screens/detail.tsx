@@ -14,8 +14,7 @@ const Detail: React.FC = () => {
   const { navigate } = useNavigation();
 
   return (
-    <>
-      <ScrollView
+    <ScrollView
         ref={(ref) => {
           scrollViewRef.current = ref;
         }}
@@ -26,7 +25,6 @@ const Detail: React.FC = () => {
         <MyButton onPress={() => navigate('Dashboard')} />
         <MyText />
       </ScrollView>
-    </>
   );
 };
 
