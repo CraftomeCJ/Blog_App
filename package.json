@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start:mha-share": "nx run-ios mha-share --no-cache",
-    "start:mha-share:android": "nx build-android mha-share --no-cache; nx run-android mha-share --no-cache",
+    "start:mha-share:android": "nx run-android mha-share --no-cache",
     "start:supervisor": "nx run-ios supervisor --no-cache",
     "start:supervisor:android": "nx run-android supervisor --no-cache",
     "start:supervisee": "nx run-ios supervisee --no-cache",
